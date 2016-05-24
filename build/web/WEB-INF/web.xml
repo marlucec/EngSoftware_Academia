@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ActionFactory</servlet-name>
+        <servlet-class>controller.ActionFactory</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FrontController</servlet-name>
+        <servlet-class>action.FrontController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ActionFactory</servlet-name>
+        <url-pattern>/ActionFactory</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Envia</servlet-name>
+        <servlet-class>controller.Envia</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Envia</servlet-name>
+        <url-pattern>/Envia</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FrontController</servlet-name>
+        <url-pattern>/FrontController</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
